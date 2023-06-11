@@ -1,4 +1,4 @@
-const data =  require("../fakeData");
+const data =  require("../database/fakeData");
 
 let nextId = data.length + 1;
 
@@ -11,6 +11,7 @@ module.exports = function(req, res){
         name: name,
         job: job,
         isAdmin: false,
+        getCount: 0,
       };
 
     data.push(newUser);
